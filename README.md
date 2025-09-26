@@ -73,39 +73,3 @@ GET	    /api/items/{id}	 Get by id
 POST	  /api/items	     Create
 PUT	    /api/items/{id}	 Update
 DELETE	/api/items/{id}	 Delete
-
-Sample POST body
-{
-  "name": "Pencil HB",
-  "code": "P-HB",
-  "brand": "Faber-Castell",
-  "unitPrice": 12.5
-}
-
-
-**Project Structure**
-Group6_M1Partial.sln
-│
-├─ Api/
-│  ├─ Controllers/
-│  │  └─ ItemsController.cs
-│  ├─ Data/
-│  │  └─ AppDbContext.cs
-│  ├─ Migrations/
-│  ├─ Models/
-│  │  └─ Item.cs
-│  ├─ Services/
-│  │  ├─ IItemService.cs
-│  │  └─ ItemService.cs
-│  ├─ Program.cs
-│  ├─ appsettings.json
-│  └─ Properties/
-│     └─ launchSettings.json
-│
-└─ Client.WinForms/
-   ├─ Models/
-   │  └─ Item.cs
-   ├─ Services/
-   │  └─ ItemApi.cs
-   ├─ Form1.cs
-   └─ Program.cs
