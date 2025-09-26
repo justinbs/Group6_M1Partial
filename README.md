@@ -75,23 +75,37 @@ PUT	    /api/items/{id}	 Update
 DELETE	/api/items/{id}	 Delete
 
 Sample POST body
-{ "name": "Pencil HB", "code": "P-HB", "brand": "Faber-Castell", "unitPrice": 12.5 }
+{
+  "name": "Pencil HB",
+  "code": "P-HB",
+  "brand": "Faber-Castell",
+  "unitPrice": 12.5
+}
+
 
 **Project Structure**
 Group6_M1Partial.sln
 │
 ├─ Api/
-│  ├─ Controllers/ItemsController.cs
-│  ├─ Data/AppDbContext.cs
+│  ├─ Controllers/
+│  │  └─ ItemsController.cs
+│  ├─ Data/
+│  │  └─ AppDbContext.cs
 │  ├─ Migrations/
-│  ├─ Models/Item.cs
-│  ├─ Services/IItemService.cs, ItemService.cs
+│  ├─ Models/
+│  │  └─ Item.cs
+│  ├─ Services/
+│  │  ├─ IItemService.cs
+│  │  └─ ItemService.cs
 │  ├─ Program.cs
 │  ├─ appsettings.json
-│  └─ Properties/launchSettings.json
+│  └─ Properties/
+│     └─ launchSettings.json
 │
 └─ Client.WinForms/
-   ├─ Models/Item.cs
-   ├─ Services/ItemApi.cs
-   ├─ Form1.cs, Program.cs
-   └─ (UI is built in code at runtime; no designer syncing needed)
+   ├─ Models/
+   │  └─ Item.cs
+   ├─ Services/
+   │  └─ ItemApi.cs
+   ├─ Form1.cs
+   └─ Program.cs
