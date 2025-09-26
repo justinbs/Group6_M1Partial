@@ -28,36 +28,35 @@ Dev tools: Visual Studio 2022, Swagger UI
   
 ### 1) Clone the repo  
 
-2) Open the solution
+### 2) Open the solution
 - Open Group6_M1Partial.sln in Visual Studio.  
 
 
-4) Restore & build
+### 3) Restore & build
 VS usually restores packages automatically.  
 
 If not: Right-click the solution → Restore NuGet Packages, then Build → Rebuild Solution.  
 
-4) Create the database (first run only)
+### 4) Create the database (first run only)
 
 Tools → NuGet Package Manager → Package Manager Console  
-
 Set Default project (dropdown) to Api  
 
 Run:  
   Update-Database  
   
-// If you see "no migrations", run: //  
-  Add-Migration InitialCreate  
-  Update-Database  
+If you see "no migrations", run:  
+  Add-Migration InitialCreate 
+  Update-Database 
 
-6) Ensure API URL and client URL match
+### 5) Ensure API URL and client URL match
 Api/Properties/launchSettings.json should contain:
   "applicationUrl": "http://localhost:5238"
 
 Client.WinForms/Services/ItemApi.cs should contain:
-  private const string Base = "http://localhost:5238/api/items";  
+  private const string Base = "http://localhost:5238/api/items"; 
 
-8) Run both projects together
+### 6) Run both projects together
    
 Right-click the solution → Configure Startup Projects…
 
@@ -71,7 +70,7 @@ Expected result:
 - WinForms app opens (Item Manager UI)
   
   
-7) Quick test (WinForms)
+### 7) Quick test (WinForms)
 Add an item:  
 Name: Gel Pen Blue  
 Code: GP-BLU  
