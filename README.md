@@ -1,13 +1,19 @@
 **Group6_M1Partial – Item Manager**
 
-An ASP.NET Core Web API (.NET 8) with a WinForms client for basic Item CRUD.
-Tech used: C#, ASP.NET Web API, EF Core (SQL Server LocalDB), Dependency Injection, Swagger.
+An ASP.NET Core Web API (.NET 8) with a WinForms client for basic Item CRUD.  
 
-**Tech Stack**
-Backend: ASP.NET Core Web API (.NET 8), EF Core, SQL Server LocalDB
-Client: Windows Forms (.NET)
-Patterns: DI, repository/service pattern (lightweight)
-Dev tools: Visual Studio 2022, Swagger UI
+Tech used: C#, ASP.NET Web API, EF Core (SQL Server LocalDB), Dependency Injection, Swagger.  
+
+**Tech Stack**  
+
+Backend: ASP.NET Core Web API (.NET 8), EF Core, SQL Server LocalDB  
+
+Client: Windows Forms (.NET)  
+
+Patterns: DI, repository/service pattern (lightweight)  
+
+Dev tools: Visual Studio 2022, Swagger UI  
+
 
 
 ***********************
