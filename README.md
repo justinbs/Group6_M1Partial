@@ -67,15 +67,15 @@ You should see it in the grid. Try Search, Update, and Delete.
 **API**
 Base URL: http://localhost:5238/api/items
 
-Verb->Route->Description  
+Verb - Route - Description  
 
-GET -> /api/items -> List all  
+GET - /api/items - List all  
 
-GET -> /api/items/{id} -> Get by id  
+GET - /api/items/{id} - Get by id  
 
-POST -> /api/items -> Create  
+POST - /api/items - Create  
 
-PUT -> /api/items/{id} -> Update  
+PUT - /api/items/{id} - Update  
 
-DELETE -> /api/items/{id} -> Delete  
+DELETE - /api/items/{id} - Delete  
 
